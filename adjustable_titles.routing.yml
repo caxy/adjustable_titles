@@ -1,0 +1,6 @@
+adjustable_titles.content:
+  path: '/test_title'
+  defaults:
+    _controller: '\Drupal\adjustable_titles\Controller\AdjustableController::getContent'
+  requirements:
+    _permission: 'access content'

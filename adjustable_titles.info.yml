@@ -1,0 +1,6 @@
+name: Adjustable Titles
+description: Allows for page titles to be modified and include other content.
+package: Custom
+
+type: module
+core: 8.x
