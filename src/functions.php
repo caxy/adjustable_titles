@@ -4,6 +4,9 @@ namespace Drupal\adjustable_titles;
 
 use Symfony\Cmf\Component\Routing\RouteObjectInterface;
 
+/**
+ * @return \Drupal\Core\Entity\EntityInterface|mixed|null
+ */
 function get_node()
 {
     $request = \Drupal::request();
