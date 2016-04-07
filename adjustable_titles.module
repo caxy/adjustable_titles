@@ -13,14 +13,6 @@ function adjustable_titles_preprocess_html(&$variables) {
   $request = \Drupal::request();
 
   if ($request->attributes->has('node')) {
-    if (\Drupal::request()->attributes->get(RouteObjectInterface::ROUTE_NAME) == 'node.view') {
-      $node = $request->attributes->get('node');
-    }
-    else if (\Drupal::request()->attributes->get(RouteObjectInterface::ROUTE_NAME) == 'entity.node.revision') {
-      $vid = \Drupal::request()->attributes->get('node_revision');
-      $node = \Drupal::entityManager()->getStorage('node')->loadRevision($vid);;
-    }
-
     if ($node = \Drupal\adjustable_titles\get_node()) {
       // Our trigger for whether adjustable titles should be used is currently this field.
       // It would be better to have an admin-populated set of page/content types.
