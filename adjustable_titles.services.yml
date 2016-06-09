@@ -1,0 +1,6 @@
+services:
+  taxonomy.term_route_context:
+    class: Drupal\adjustable_titles\ContextProvider\TermRouteContext
+    arguments: ['@current_route_match']
+    tags:
+      - { name: 'context_provider' }

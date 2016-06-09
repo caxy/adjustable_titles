@@ -2,8 +2,5 @@
     "name": "drupal/adjustable_titles",
     "description": "Adjustable titles will allow additional content to be displayed with a node's title.",
     "type": "drupal-module",
-    "license": "GPL-2.0+",
-    "autoload": {
-        "files": ["src/functions.php"]
-    }
+    "license": "GPL-2.0+"
 }
