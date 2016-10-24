@@ -10,3 +10,10 @@ function adjustable_titles_theme($existing, $type, $theme, $path) {
     ),
   );
 }
+
+/**
+ * Implements hook_display_variant_plugin_alter().
+ */
+function adjustable_titles_display_variant_plugin_alter(array &$definitions) {
+    $definitions['block_page']['class'] = \Drupal\adjustable_titles\Plugin\DisplayVariant\BlockPageVariant::class;
+}
